@@ -12,11 +12,18 @@ export default function Login({ history }) {
     //email
     const res = await api.post("/sessions", { email });
 
+    if (res.data === null) {
+      window.alert(
+        "Email cadastrado com sucesso! Insira o e-mail novamente para logar"
+      );
+      return;
+    }
+
     const { _id } = res.data;
 
     localStorage.setItem("user", _id);
 
-    history.push('/profile')
+    history.push("/profile");
   }
 
   return (

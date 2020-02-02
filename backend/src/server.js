@@ -17,7 +17,7 @@ const connectedUsers = {};
 //websocket
 
 mongoose.connect(
-  "mongodb+srv://tester:tester123@gregorispielmann-kkcp0.mongodb.net/aircnc?retryWrites=true&w=majority",
+  "mongodb+srv://gobarber:gobarber@cluster0-9p9po.mongodb.net/aircnc?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -28,7 +28,7 @@ io.on("connection", socket => {
   const { user_id } = socket.handshake.query;
   connectedUsers[user_id] = socket.id;
 
-  socket.emit("hello", "World");
+  // socket.emit("hello", "World");
 });
 
 app.use((req, res, next) => {

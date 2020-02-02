@@ -1,16 +1,12 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
 
 //routes
-import Routes from './src/routes'
+import Routes from "./src/routes";
 
 export default function App() {
-
   //remove warnings from expo
   console.disableYellowBox = true;
-  console.ignoredYellowBox = ['Warning: Each', 'Warning: Failed'];
+  console.ignoredYellowBox = ["Warning: Each", "Warning: Failed"];
 
-  return <Routes></Routes>
+  return <Routes></Routes>;
 }
-
-

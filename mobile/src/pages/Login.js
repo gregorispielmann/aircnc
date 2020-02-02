@@ -27,7 +27,8 @@ export default function Login({ navigation }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-    // AsyncStorage.clear()
+  // clean async storage login
+  // AsyncStorage.clear();
 
   //   test if user is setted
   useEffect(() => {
@@ -39,13 +40,11 @@ export default function Login({ navigation }) {
   async function handleSubmit() {
     setLoading(true);
 
-
     const res = await api.post("/sessions", {
       email
     });
 
     const { _id } = res.data;
-
 
     await AsyncStorage.setItem("user", _id);
     await AsyncStorage.setItem("techs", techs);
@@ -54,7 +53,6 @@ export default function Login({ navigation }) {
 
     navigation.navigate("List");
     // else setError(true);
-
   }
 
   return (
