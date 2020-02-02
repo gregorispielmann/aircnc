@@ -14,7 +14,7 @@
 
 ---
 
-<p align="center"> This app is a "airbnb" parody to rent spaces at IT offices.
+<p align="center"> This app is an "airbnb" parody to rent spaces at IT offices.
 <br>
 This project born to be a little full stack app to rent spaces at IT offices like "Airbnb" do to houses and rooms around the world.
     <br> 
