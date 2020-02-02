@@ -130,17 +130,11 @@ To run react application
 
 ### Web
 
-Running the app you will signin with login info below
-
-```
-Login: admin@gympoint.com
-Password: 123456
-```
+Running the app you will signin with your email
 
 ### Mobile
 
-You will only need an ID from a student with an active registration.
-In HelpOrders Page you need to use "Pull To Refresh" to see if there is any update in your help orders.
+You will only need your email and the tech you want an office.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
